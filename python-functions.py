@@ -20,13 +20,16 @@ print(largest([1, 2, 3, 4, 0]))
 
 # 3. Write a function named occurrences that takes two string arguments as input and counts the number of occurrences of the second string inside the first string.
 
-# product(-1, 4) # returns -4
-# product(2, 5, 5) # returns 50
-# product(4, 0.5, 5) # returns 10.0
+# occurrences('fleep floop', 'e')   # returns 2
+# occurrences('fleep floop', 'p')   # returns 2
+# occurrences('fleep floop', 'ee')  # returns 1
+# occurrences('fleep floop', 'fe')  # returns 0
+
 
 def occurrences(str1, str2):
-  # does something
-  print(str1, str2)
+  return str1.count(str2)
+
+print(occurrences('cat', 'at'))
 
 # 4. Write a function named product that takes an arbitrary number of numbers, multiplies them all together, and returns the product. HINT: Review your notes on args.
 
