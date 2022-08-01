@@ -4,8 +4,9 @@
 # sum_to(10) returns 55
 
 def sum_to(n):
-  # does something
-  print(n)
+  return (n * (n + 1) // 2)
+
+print(sum_to(10))
 
 # 2. Write a function named largest that takes a list of numbers as an argument and returns the largest number in that list.
 
@@ -13,8 +14,9 @@ def sum_to(n):
 # largest([10, 4, 2, 231, 91, 54])  # returns 231
 
 def largest(list):
-  # does something
-  print(list)
+  return (max(list))
+
+print(largest([1, 2, 3, 4, 0]))
 
 # 3. Write a function named occurrences that takes two string arguments as input and counts the number of occurrences of the second string inside the first string.
 
