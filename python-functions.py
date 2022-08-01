@@ -3,6 +3,9 @@
 # sum_to(6) returns 21
 # sum_to(10) returns 55
 
+from math import prod
+
+
 def sum_to(n):
   return (n * (n + 1) // 2)
 
@@ -37,6 +40,10 @@ print(occurrences('cat', 'at'))
 # product(2, 5, 5) # returns 50
 # product(4, 0.5, 5) # returns 10.0
 
-def product(numbers):
-  # do something
-  print(numbers)
+def product(*numbers):
+  product = 1
+  for item in numbers:
+    product *= item
+  return product
+
+print(product(-1, 4))
